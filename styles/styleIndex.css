@@ -1,0 +1,83 @@
+:root {
+  --ColoBg: #67729D;
+  --ColorText: #FED9ED;
+  --ColorBtn: #E7BCDE
+  --colorEnlaces:#EEE7DA;
+  --Secundario: #BB9CC0;
+  --ColorWhite: #ffffff;
+  --ColorBlack: #000000;
+
+  /* #FED9ED
+#E7BCDE ya
+#BB9CC0 ya
+#67729D ya */
+  /* Fuentes */
+  --FuenteTitulo: "Cedarville Cursive", cursive;
+  --FuenteTexto: "Asap", sans-serif;
+  --FuenteSUb: "Nanum Myeongjo", serif;
+}
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+}
+html {
+  box-sizing: border-box;
+  font-size: 62.5%;
+}
+body {
+  background-color: var(--ColoBg);
+  color: var(--ColorText);
+}
+h1 {
+  font-size: 4rem;
+  font-family: var(--FuenteTitulo);
+}
+h2 {
+  font-size: 3rem;
+  font-family: var(--FuenteSUb);
+}
+h3 {
+  font-size: 2rem;
+  font-family: var(--FuenteSUb);
+}
+a{
+    text-decoration: none;
+}
+.header{
+    display: flex;
+    justify-content: center;
+}
+.header__tittle{
+    margin: -1rem ;
+}
+/* navegacion */
+.contNav{
+    font-size: 1.7rem;
+    margin: .6rem auto;
+    padding: 1.1rem;
+    background-color: var(--Secundario);
+    border-radius: .8rem;
+}
+.contNav__navegacion{
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+}
+.contNav__nextPage{
+    color: var(--ColorWhite);
+    font-family: var(--FuenteTexto);
+    padding: 1rem;
+}
+.contNav__nextPage:hover{
+    background-color: var(--ColoBg);
+    border-radius: .5rem;
+    display: block;
+}
+
+@media(min-width: 768px){
+    .contNav__navegacion{
+        flex-direction: row;
+    }
+}
+
